@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Barricieto;
+    background-color: #FAF9F6;
+}
+
+header{
+    background: linear-gradient(#ff5bad,#FFD6EA,#fff6fa);
+    color: black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+#resumo{
+    width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#resumo h1, #resumo h3, #resumo h2{
+    color: #8A0048;
+    text-align: center;
+}
+
+#resumo h2{
+    margin-top: 80px;
+}
+
+#resumo p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+}
+
+.carrossel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 25px;
+}
+
+.carrossel::-webkit-scrollbar{
+    display: none;
+}
+
+hr{
+    background-color: #8E8E8E;
+    height: 1px;
+}
+
+ol, ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+#caixas h2{
+    margin-top: 60px;
+    color: #8A0048;
+    text-align: center;
+}
+
+.quadrado{
+    width: 300px;
+    padding: 20px;
+    height: 250px;
+    border: 2px solid #8A0048;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(160, 0, 85, 0.4);
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.quadrado:hover{
+    width: 320px;
+    padding: 25px;
+    height: 270px;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.quadrado h4{
+    color: #8A0048;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.quadrado li{
+    text-align: justify;
+}
+
+#curiosidades ol{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#visitados ul{
+    padding-left: 80px;
+}
+
+#destinos ul{
+    padding-left: 110px;
+}
+
+#sobre_mim{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#hr_footer{
+    margin-top: 50px;
+}
+
+.pessoinhas img{
+    width: 500px;
+    border-radius: 0;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+.pessoinhas h2{
+    color: #8A0048;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.pessoinhas p{
+    text-align: justify;
+    width: 900px;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+footer{
+    bottom: 0;
+    padding: 50px;
+    background: linear-gradient(#fff6fa,#FFD6EA,#ff5bad);
+}
+
+footer p{
+    text-align: center;
+}
