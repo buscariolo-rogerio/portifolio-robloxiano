@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Aesthetic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/isabella.css">
+  </head>
+<body>
+
+<header>
+  <div class="hero fade">
+    <h1>Isabella</h1>
+    <p>Designer & Desenvolvedor Front‑End focado em experiências modernas e minimalistas</p>
+    <button onclick="scrollToSection('projects')">Ver projetos</button>
+  </div>
+</header>
+
+<section id="projects">
+  <h2 class="section-title fade">Projetos</h2>
+  <div class="projects">
+    <div class="card fade">
+      <h3>Projeto Um</h3>
+      <p>Landing page moderna com foco em UX/UI e performance.</p>
+    </div>
+    <div class="card fade">
+      <h3>Projeto Dois</h3>
+      <p>Dashboard interativo com animações suaves e design clean.</p>
+    </div>
+    <div class="card fade">
+      <h3>Projeto Três</h3>
+      <p>Website criativo com estética futurista e identidade forte.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title fade">Sobre mim</h2>
+  <div class="about fade" style="display:flex; gap:2.5rem; align-items:center; flex-wrap:wrap;">
+    <img src="/imgs/avatar_bella.jpeg" alt="Minha foto" style="width:220px; height:220px; object-fit:cover; border-radius:50%; box-shadow:0 15px 40px rgba(0,0,0,0.4);" />
+    <p>
+      Sou apaixonado por design moderno, tecnologia e experiências digitais que unem estética e funcionalidade.
+      Trabalho criando interfaces limpas, animações sutis e projetos que se destacam visualmente.
+    </p>
+  </div>
+</section>
+
+<section id="places">
+  <h2 class="section-title fade">Lugares que quero visitar</h2>
+  <div class="projects">
+    <div class="card fade">
+      <h3>Itália 🇮🇹</h3>
+      <p>Arte, arquitetura histórica, gastronomia incrível e paisagens cinematográficas.</p>
+    </div>
+    <div class="card fade">
+      <h3>Canadá 🇨🇦</h3>
+      <p>Natureza absurda, cidades modernas e qualidade de vida.</p>
+    </div>
+    <div class="card fade">
+      <h3>San Andreas 🌴</h3>
+      <p>Um lugar lendário cheio de histórias, liberdade e vibes únicas.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 · Isabella · Todos os direitos reservados
+</footer>
+
+<script>
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
