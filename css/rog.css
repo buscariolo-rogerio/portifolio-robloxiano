@@ -8,13 +8,12 @@ html{
 }
 
 body {
-    background-image:url(../imgs/estrelas.gif) ;
+    background-image: url("../imgs/estrelas.gif");
     color: white;
     font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
     padding-bottom: 50px;
 }
-
 
 #titulo-centro {
     text-align: center;
