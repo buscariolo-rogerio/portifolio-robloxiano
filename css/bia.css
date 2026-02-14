@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 18, 18);
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    padding: 5px;
+}
+
+.headerzao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#logo img {
+    height: 70px;
+    width: 70px;
+}
+
+#páginas a {
+    color: #4840d6;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* TEXTOS E LISTAS */
+h1, h3 {
+    color: #4840d6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nome {
+    color: #7770ee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    width: 150px;
+}
+
+ol, ul {
+    color: #4840d6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.topicos {
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+}
+
+.topicos:hover {
+    transform: scale(1.1);
+    color: #7770ee;
+    font-weight: bolder;
+}
+
+.lista, .lista_b {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    gap: 100px;
+    margin-left: auto; /* Centraliza melhor se a tela for grande */
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.conteudo {
+    margin-top: 30px;
+    width: 600px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* PÁGINA */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: black;
+    position: fixed;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* IMAGENS */
+.foto img {
+    height: 280px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #4840d6;
+    box-shadow: 0px 0px 10px 0px #4840d6;
+}
+
+/* HOVER E EFEITOS */
+.eu1 {
+    transition: transform 0.3s ease;
+}
+.eu1:hover {
+    /* Certifique-se que eu1_0.jpeg existe na pasta imgs */
+    content: url("../imgs/eu1_0.jpeg");
+    transform: scale(1.1);
+}
+
+.eu2 {
+    transition: transform 0.3s ease;
+}
+.eu2:hover {
+    /* Corrigido para eu_2.jpeg (igual ao original) para não ficar branco */
+    content: url("../imgs/eu2_0.jpeg");
+    transform: scale(1.1);
+}
+
+.eu3 {
+    transition: transform 0.3s ease;
+}
+.eu3:hover {
+    /* Corrigido para eu_3.jpeg */
+    content: url("../imgs/eu3_0.jpeg");
+    transform: scale(1.1);
+}
+
+.eub {
+    margin-top: 60px;
+    transition: transform 0.3s ease;
+}
+.eub:hover {
+    /* Troca para a foto com coroa */
+    content: url("../imgs/foto_1_1.jpeg");
+    transform: scale(1.1);
+}
+
+.paraty {
+    margin-left: -300px;
+    transition: transform 0.3s ease;
+}
+.paraty:hover {
+    content: url("../imgs/paraty2.jpeg");
+    transform: scale(1.1);
+}
+
+.bia_aesthetic {
+    transition: transform 0.3s ease;
+}
+.bia_aesthetic:hover {
+    transform: scale(1.1);
+}
+
+.atenas {
+    margin-left: -300px;
+    transition: transform 0.3s ease;
+}
+.atenas:hover {
+    /* Troca Atenas por Seul */
+    content: url("../imgs/seul.jpeg");
+    transform: scale(1.1);
+}
